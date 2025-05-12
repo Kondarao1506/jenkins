@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent AGENT-1
     stages {
         stage('Build') {
             steps {
@@ -14,7 +14,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "echo this is deploy"
-                error "pipeline failed"
             }
         }
     }
