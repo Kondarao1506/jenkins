@@ -13,7 +13,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                "echo this is deploy"
+                echo "echo this is deploy"
+                error "pipeline failed"
             }
         }
     }
