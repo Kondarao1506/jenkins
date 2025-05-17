@@ -6,12 +6,17 @@ pipeline {
     options{
         timeout(time: 10 , unit: 'SECONDS')
         disableConcurrentBuilds()
-        retry(2)
+       // retry(2)
+    }
+
+    parameters{
+           string(name: "pavan", defaultValue: "hi hello pavan", discription: "Saying hello")
     }
     stages {
         stage('Build') {
             steps {
                 sh "echo this is build"
+                sh 'echo ${param.pavan}'
             }
         }
         stage('Test') {
