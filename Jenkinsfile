@@ -10,7 +10,7 @@ pipeline {
     }
 
     parameters{
-           string(name: "pavan", defaultValue: "hi hello pavan", discription: "Saying hello")
+           string(name: "pavan", defaultValue: "hi hello pavan", description: "Saying hello")
     }
     stages {
         stage('Build') {
