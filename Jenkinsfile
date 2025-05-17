@@ -18,6 +18,7 @@ pipeline {
             steps {
                 sh "echo this is test"
                // sleep 10
+               error "pipeline failed"
             }
         }
         stage('Deploy') {
