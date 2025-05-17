@@ -53,6 +53,12 @@ pipeline {
                 echo "Password: ${params.PASSWORD}"
             }
         }
+
+        stage('triggers'){
+            steps{
+                echo "working with triggers"
+            }
+        }
     }
 
     post{
