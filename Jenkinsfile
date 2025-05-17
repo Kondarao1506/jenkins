@@ -24,7 +24,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh "echo this is build"
-                echo '${param.pavan}'
+                //echo '${param.pavan}'
             }
         }
         stage('Test') {
