@@ -62,10 +62,12 @@ pipeline {
 
         stage('approval'){
             input{
+                message "should we continue?"
+                ok "we should"
 
             }
             steps{
-                
+                echo "hello "
             }
         }
     }
