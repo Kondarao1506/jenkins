@@ -59,6 +59,15 @@ pipeline {
                 echo "working with triggers"
             }
         }
+
+        stage('approval'){
+            input{
+
+            }
+            steps{
+                
+            }
+        }
     }
 
     post{
