@@ -61,6 +61,9 @@ pipeline {
         }
 
         stage('Approval'){
+            when{
+                branch 'production'
+            }
             input{
                 message "should we continue?"
                 ok "we should"
