@@ -60,7 +60,7 @@ pipeline {
             }
         }
 
-        stage('approval'){
+        stage('Approval'){
             input{
                 message "should we continue?"
                 ok "we should"
