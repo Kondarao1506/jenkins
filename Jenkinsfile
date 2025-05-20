@@ -65,7 +65,7 @@ pipeline {
             //     branch 'production'
             // }
             when {
-                expression {env.GIT_BRANCH == 'main'}
+                expression {env.GIT_BRANCH == 'origin/main'}
             }
             input{
                 message "should we continue?"
