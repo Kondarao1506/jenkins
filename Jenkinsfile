@@ -61,8 +61,11 @@ pipeline {
         }
 
         stage('Approval'){
-            when{
-                branch 'production'
+            // when{
+            //     branch 'production'
+            // }
+            when {
+                expression {env.GIT_BRANCH == 'main'}
             }
             input{
                 message "should we continue?"
