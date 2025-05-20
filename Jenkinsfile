@@ -64,10 +64,14 @@ pipeline {
             input{
                 message "should we continue?"
                 ok "we should"
+                submmiter "pavan"
+                parameters{
+                    string(name:'PERSON', defaultValue:"PAVAN", description: "who should i say hello too")
+                }
 
             }
             steps{
-                echo "hello "
+                echo "Hello ${params.PERSON}, nice to meet you!"
             }
         }
     }
