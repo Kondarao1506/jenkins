@@ -54,11 +54,11 @@ pipeline {
             }
         }
 
-        stage('triggers'){
-            steps{
-                echo "working with triggers"
-            }
-        }
+        // stage('triggers'){
+        //     steps{
+        //         echo "working with triggers"
+        //     }
+        //}
 
         stage('approval'){
             input{
