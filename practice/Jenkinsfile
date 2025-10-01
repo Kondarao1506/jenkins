@@ -1,20 +1,20 @@
 pipeline{
     agent any
-    stages{
+    stages {
         stage('Build'){
-            steps{
+            steps {
                 sudo 'echo this is build'
             }
         }
 
          stage('Test'){
-            steps{
+            steps {
                 sudo 'echo this is test'
             }
         }
 
          stage('Build'){
-            steps{
+            steps {
                 sudo 'echo this is deploybuild'
             }
         }
