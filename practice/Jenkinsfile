@@ -1,24 +1,45 @@
-pipeline{
-    agent none
-    
+// pipeline{
+//     agent none
+
+//     stages {
+//         stage('Build') {
+//             steps {
+//                 sudo 'echo this is build'
+//             }
+//         }
+
+//          stage('Test'){
+//             steps {
+//                 sudo 'echo this is test'
+//             }
+//         }
+
+//          stage('Build'){
+//             steps {
+//                 sudo 'echo this is deploybuild'
+//             }
+//         }
+//     }
+
+// }
+
+pipeline {
+    agent any
     stages {
         stage('Build') {
             steps {
-                sudo 'echo this is build'
+                 sudo 'echo this is build'
             }
         }
-
-         stage('Test'){
+        stage('Test') {
             steps {
-                sudo 'echo this is test'
+                 sudo 'echo this is test'
             }
         }
-
-         stage('Build'){
+        stage('Deploy') {
             steps {
-                sudo 'echo this is deploybuild'
+                 sudo 'echo this is deply'
             }
         }
     }
-
 }
