@@ -25,6 +25,7 @@ pipeline{
      post {
         always {
             echo "this is always says hiii"
+            deleteDir()
         }
         failure{
             echo "build is failed"
